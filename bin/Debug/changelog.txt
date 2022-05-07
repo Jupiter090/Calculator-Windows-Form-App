@@ -1,0 +1,7 @@
+Update 1.0: 
+-Added decimal point
+-Added funcionality for keyboard
+-Fixed bugs
+-Added clear all button
+-Added delet button
+-Changed authors name from Jupiter090 to Matej Planeta as Matej Planeta is my real name and Jupiter090 is just nickname ;)
