@@ -433,11 +433,17 @@ namespace WindowsFormsApp1
 
 
                 case Keys.Back:
-                    if (result.Text != "")
+                    if (result.Text != "" && result.Text != "NaN")
                     {
                         result.Text = result.Text.Substring(0, result.Text.Length - 1);
                         currentOperand = result.Text;
-                    } else if (result.Text == "" && previouse_result.Text != "")
+                    }
+                    else if (result.Text == "NaN")
+                    {
+                        result.Text = "";
+                        currentOperand = result.Text;
+                    }
+                    else if (result.Text == "" && previouse_result.Text != "")
                     {
                         result.Text = previouse_result.Text.Replace(" " + operation, "");
                         currentOperand = previoseOperand;
